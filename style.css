@@ -1,0 +1,154 @@
+.completed span{
+    text-decoration: line-through;
+    color: gray;
+}
+
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-image: url("https://www.makerstations.io/content/images/size/w1200/format/webp/2022/03/olja-lobkis-studygram-04.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*body {
+    min-height: 100vh;
+    background-image: url("");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    scrollbar-gutter:stable;
+    overflow: hidden;
+
+}*/
+
+body{
+  height:100vh;
+  margin: 0;
+  
+
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 12px;
+     overflow: hidden;
+}
+.app{
+    width:100%;
+    max-width: 500px;
+    padding:24px;
+   
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    align-items: center;
+     
+}
+.app input{
+    width:100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.app button{
+    padding: 10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.controls{
+    display:flex;
+    gap:10px;
+    width:100%;
+}
+
+.app{
+  backdrop-filter: blur(10px);
+  border-radius :10px;
+  box-shadow:  0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.app input,
+.app button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.app input{
+background: rgba(255, 255, 255, 0.25);
+border-radius: 10px;
+color:rgb(0, 0, 0);
+}
+
+.app input::placeholder{
+     color: rgba(255, 255, 255, 0.7);
+}
+
+.app button {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.app input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+.app button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+#task_list {
+  list-style: none;
+  width: 100%;
+}
+
+#task_list li{
+display: flex;
+justify-content: space-between;
+align-items:center;
+padding : 12px 14px;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.25);
+}
+
+#task_list li + li {
+  margin-top: 10px;
+}
+#task_list li span {
+  color: #0b0b0b;
+  cursor: pointer;
+}
+
+#task_list li button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#task_list li:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+#task_list li {
+  transition: background 0.2s ease;
+}
+
+#task_list {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+
